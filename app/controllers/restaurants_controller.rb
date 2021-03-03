@@ -1,5 +1,4 @@
-class ApplicationController < ActionController::Base
- 
+class RestaurantsController < ApplicationController
   def index
     @restaurants = Restaurant.all
   end
@@ -14,6 +13,8 @@ class ApplicationController < ActionController::Base
 
   def create
     @restaurant = Restaurant.new(restaurant_params)
+
+    redirect_to
   end
 
   private
