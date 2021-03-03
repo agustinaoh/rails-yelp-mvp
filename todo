@@ -1,0 +1,8 @@
+rails generate model restaurant name address phone_number category
+
+rails generate model review rating:integer content restaurants:references
+
+rails generate controller restaurant
+
+rails generate controller review
+
