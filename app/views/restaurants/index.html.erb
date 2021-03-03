@@ -1,3 +1,9 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+  <%= link_to new_restaurant_path do %>
+    <i class="fas fa-plus"></i> Add a new restaurant
+  <% end %>
+</nav>
+
 <div class="container">
   <h1>Restaurants</h1>
 
@@ -6,6 +12,4 @@
         <li><%= link_to t.name, restaurant_path(t) %> </li>
     <% end %>
   </ul>
-
-  + <%= link_to "Add a new restaurant", new_restaurant_path %>
 </div>
